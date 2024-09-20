@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+     <div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-light">
+  <div class="container-fluid">
+    <a class="navbar-brand text-warning d-flex align-item-center font-weight-bold" href="#">FOOD<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+        <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+      </svg></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">MENU</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">SERVICE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">SHOP</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <div class="input-group mb-3">
+            <button class="btn bg-light" type="button" id="button-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></button>
+            <input type="text" class="form-control bg-light border-0 focus-ring-light" placeholder="Search" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            <button class="btn bg-light border-left" type="button" id="button-addon1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2h4a2 2 0 0 1-2-2V4h4.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                  </svg>
+                  <span class="badge badge-warning text-danger">9</span>
+            </button>  
+        </div>
+      </form>
+    </div>
+  </div>
+    </nav>
+     </div>
+     <section class="container">
+        <div class="row mt-5 mt20">
+            <div class="col-md-5">
+                <div class="row align-items-center">
+                    <div class="col-12 d-flex align-item-center">
+                        <span class="bg-danger p-1 rad">Bike Delivery <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bicycle bg-white p-1 rounded-circle text-danger" viewBox="0 0 16 16">
+                            <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057 9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5h4a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.623z"/>
+                          </svg>
+                        </span>
+                    </div>
+                    <div class="row">
+                      <div class="col mt-3">
+                        <h1 class="bigHead">The Fastest Delivery <br>in <span class="text-warning">Your City</span></h1>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col mt-3">
+                        <p class="bannerPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Dolores nostrum necessitatibus placeat!</p>
+                      </div>
+                    </div>
+                    <div id="opbtn" class="row align-item-center">
+                      <div class="col-5">
+                        <button class="btn btn-danger p-3 px-4">Order Now</button>
+                      </div>
+                      <div class="col-2">
+                        <span class=" btn bg-danger text-warning bg-white rounded-circle plybtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                        </svg></span>
+                      </div>
+                      <div class="col-5 d-flex align-item-center">
+                        <button class="btn opbtnn">Order Process</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-inline">
+                 <img src="images/seafood_pizza.png" alt="" class="img-fluid floatimg">
+            </div>
+            <div class="col-md-5">
+              <div id="pdImg" class="row mtr1">
+                <div class="col-md-6 d-flex align-item-center flex-column">
+                    <div class="row justify-content-center">
+                      <div class="col-12 bg-white crd flex-column rounded float-start">
+                        <img src="images/seafood_pizza.png" class="img-fluid" alt="">
+                    <h5 class="text-center" style="font-weight: bold;">Pizza</h5>
+                    <h6 class="text-center">Mashroom Souce</h6>
+                    <h6 class="text-center" style="font-weight: bold;"><span class="text-danger">$</span>5.5</h6>
+                    <div id="arrSVG" class="row">
+                      <div class="col-6 d-flex justify-content-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor1" class="bi bi-arrow-right-circle-fill text-dark" viewBox="0 0 16 16">
+                          <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                        </svg>
+                      </div>
+                      <div class="col-6 d-flex justify-content-left"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor1" class="bi bi-arrow-left-circle-fill text-white" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                      </svg></div>
+                    </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-item-center flex-column">
+                    <div class="row justify-content-center">
+                      <div class="col-12 bg-white mtr1 crd flex-column rounded float-end">
+                        <img src="images/seafood.png" class="img-fluid" alt="">
+                    <h5 class="text-center" style="font-weight: bold;">SeaFood</h5>
+                    <h6 class="text-center">Mashroom Souce</h6>
+                    <h6 class="text-center" style="font-weight: bold;"><span class="text-danger">$</span>5.5</h6>
+                    <div id="arrSVG" class="row">
+                      <div class="col-6 d-flex justify-content-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor1" class="bi bi-arrow-right-circle-fill text-dark" viewBox="0 0 16 16">
+                          <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                        </svg>
+                      </div>
+                      <div class="col-6 d-flex justify-content-left"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor1" class="bi bi-arrow-left-circle-fill text-white" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                      </svg></div>
+                    </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div id="pdImg" class="row mtr mtr1">
+                <div class="col-md-6 d-flex align-item-center flex-column">
+                    <div class="row justify-content-center">
+                      <div class="col-12 bg-white crd flex-column rounded float-start">
+                        <img src="images/burger.png" class="img-fluid" alt="">
+                    <h5 class="text-center" style="font-weight: bold;">Burger</h5>
+                    <h6 class="text-center">Mashroom Souce</h6>
+                    <h6 class="text-center" style="font-weight: bold;"><span class="text-danger">$</span>5.5</h6>
+                    <div id="arrSVG" class="row">
+                      <div class="col-6 d-flex justify-content-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor1" class="bi bi-arrow-right-circle-fill text-dark" viewBox="0 0 16 16">
+                          <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                        </svg>
+                      </div>
+                      <div class="col-6 d-flex justify-content-left"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor1" class="bi bi-arrow-left-circle-fill text-white" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                      </svg></div>
+                    </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-item-center flex-column">
+                    <div class="row justify-content-center">
+                      <div class="col-12 bg-white crd mtr1 flex-column rounded float-end">
+                        <img src="images/seafood_pizza.png" class="img-fluid" alt="">
+                    <h5 class="text-center" style="font-weight: bold;">Pizza</h5>
+                    <h6 class="text-center">Mashroom Souce</h6>
+                    <h6 class="text-center" style="font-weight: bold;"><span class="text-danger">$</span>5.5</h6>
+                    <div id="arrSVG" class="row">
+                      <div class="col-6 d-flex justify-content-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor1" class="bi bi-arrow-right-circle-fill text-dark" viewBox="0 0 16 16">
+                          <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                        </svg>
+                      </div>
+                      <div class="col-6 d-flex justify-content-left"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor1" class="bi bi-arrow-left-circle-fill text-white" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                      </svg></div>
+                    </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+     </section>
+     <section class="container">
+      <div class="row mb-5" style="margin-top: 75px;">
+        <div class="col-md-4">
+          <div class="row mrt0 cntrCont">
+            <div class="col-12 crd1 w-75 p-3 ptr bg-light">
+              <div class="row">
+                <div class="col-4">
+                  <img src="images/seafood.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-8">
+                     <div class="row">
+                      <div class="col-12">
+                        <span class="bg-danger cartPad rounded-circle float-end">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill text-white" viewBox="0 0 16 16">
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                          </svg>
+                         </span>
+                      </div>
+                     </div>
+                     <div class="row">
+                      <div class="col-12">
+                        <p class="text-center" style="font-weight: bold; margin-bottom: 5px !important;">Fresh Orange</p>
+                        <h6 class="text-start" style="font-size: 12px;"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>4.5</h6>
+                        <div class="row">
+                          <div class="col-8"><h5 class="text-start d-flex align-items-center" style="font-weight: bold;"><span class="text-danger">$</span>7.5</h5></div>
+                          <div class="col-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                              <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row cntrCont justify-content-center">
+            <div class="col-12 crd1 w-75 p-3 ptr bg-light">
+              <div class="row">
+                <div class="col-4">
+                  <img src="images/seafood.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-8">
+                     <div class="row">
+                      <div class="col-12">
+                        <span class="bg-danger cartPad rounded-circle float-end">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill text-white" viewBox="0 0 16 16">
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                          </svg>
+                         </span>
+                      </div>
+                     </div>
+                     <div class="row">
+                      <div class="col-12">
+                        <p class="text-center" style="font-weight: bold; margin-bottom: 5px !important;">Fresh Orange</p>
+                        <h6 class="text-start" style="font-size: 12px;"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>4.5</h6>
+                        <div class="row">
+                          <div class="col-8"><h5 class="text-start d-flex align-items-center" style="font-weight: bold;"><span class="text-danger">$</span>7.5</h5></div>
+                          <div class="col-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                              <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row cntrCont justify-content-end">
+            <div class="col-12 crd1 w-75 p-3 ptr bg-light">
+              <div class="row">
+                <div class="col-4">
+                  <img src="images/seafood.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-8">
+                     <div class="row">
+                      <div class="col-12">
+                        <span class="bg-danger cartPad rounded-circle float-end">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill text-white" viewBox="0 0 16 16">
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                          </svg>
+                         </span>
+                      </div>
+                     </div>
+                     <div class="row">
+                      <div class="col-12">
+                        <p class="text-center" style="font-weight: bold; margin-bottom: 5px !important;">Fresh Orange</p>
+                        <h6 class="text-start" style="font-size: 12px;"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="currentColor" class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                          <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>4.5</h6>
+                        <div class="row">
+                          <div class="col-8"><h5 class="text-start d-flex align-items-center" style="font-weight: bold;"><span class="text-danger">$</span>7.5</h5></div>
+                          <div class="col-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                              <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+     <section class="bgImg bg-light">
+       <div class="container">
+        <div class="row p-5 p-md-1 pb-0">
+          <div class="col-md-6 font-weight-bold">
+                <div class="row">
+                  <div class="col-12 p-5 pAll0">
+                    <h6 class="text-danger" style="font-size: 0.8rem;">BLACK FRIDAY OFFER</h6>
+                <h2 style="font-weight: bold; font-size: 3rem;">Organic Orange Joice <span class="text-warning">40% Flat</span></h2>
+                <p style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aperiam eaque voluptatem esse amet magni porro asperiores? Officia, vero maxime.</p>
+                <button class="btn btn-dark vAll" style="font-size: 10px; font-weight: 600; border-radius: 30px;">View All <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right-circle-fill text-light" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                </svg></button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 cCenter mtR-20">
+                    <img src="images/tomato.png" class="img-fluid tomato" alt="">
+                  </div>
+                </div>
+          </div>
+          <div class="col-md-6 d-none d-md-inline">
+            <img src="images/uncle.png" alt="" class="img-fluid uncle">
+          </div>
+        </div>
+       </div>
+     </section>
+     <section class="container my-5">
+      <div class="row justify-content-center align-items-end px-5">
+        <div class="col-md-6">
+          <p style="margin-bottom: 0; font-size: 12px; color: #05ff05;">NATURAL ONLY</p>
+          <h2 class="textHR" style="font-weight: bold; margin-bottom: 0px !important;">Offers New Products</h2>
+        </div>
+        <div class="col-md-6 float-end d-flex justify-content-md-end justify-content-start mt-3 mt-md-0 flex-wrap gap-3">
+          <button class="btn btn-warning btn-sm">All Products</button>
+          <button class="btn btn-light border btn-sm">Beverage</button>
+          <button class="btn btn-light border btn-sm">Buffer</button>
+          <button class="btn btn-light border btn-sm">Dried</button>
+          <button class="btn btn-light border btn-sm">Food</button>
+        </div>
+      </div>
+      <div class="row mt-5 p-3 justify-content-around">
+        <div class="col-md-3 border p-2 mt-5 rounded-4 ">
+          <div class="row justify-content-center">
+            <div class="col-12 bg-light p-3 rounded-4 crd-sm">
+              <div class="row">
+                <div class="col-12 d-flex justify-content-between">
+                   <button class="btn btn-success btn-sm btn-crle">FRESH</button>
+                   <button class="btn btn-danger btn-sm btn-crle">SALE 20%</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <img src="images/Layer 3.png" height="173" class="img-fluid crd-sm-img" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 pt-2">
+              <p style="font-size: 8px;" class="text-warning">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                </svg><span class="text-dark">(01)</span>
+              </p>
+              <h5 style="font-size: 16px; font-weight: bold;" >Vegan Egg Replacer</h5>
+              <p class="text-danger" style="font-size: 16px; font-weight: bold;"><span style="font-size: 13px; color: #cccccc;">$200.00</span> $280.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 border p-2 mt-5 rounded-4">
+          <div class="row justify-content-center">
+            <div class="col-12 bg-light p-3 rounded-4 crd-sm">
+              <div class="row">
+                <div class="col-12 d-flex justify-content-between">
+                   <button class="btn btn-success btn-sm btn-crle">FRESH</button>
+                   <button class="btn btn-danger btn-sm btn-crle">SALE 20%</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <img src="images/Layer 4.png" height="173" class="img-fluid crd-sm-img" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 pt-2">
+              <p style="font-size: 8px;" class="text-warning">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                </svg><span class="text-dark">(01)</span>
+              </p>
+              <h5 style="font-size: 16px; font-weight: bold;" >Vegan Egg Replacer</h5>
+              <p class="text-danger" style="font-size: 16px; font-weight: bold;"><span style="font-size: 13px; color: #cccccc;">$200.00</span> $280.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 border p-2 mt-5 rounded-4">
+          <div class="row justify-content-center">
+            <div class="col-12 bg-light p-3 rounded-4 crd-sm">
+              <div class="row">
+                <div class="col-12 d-flex justify-content-between">
+                   <button class="btn btn-success btn-sm btn-crle">FRESH</button>
+                   <button class="btn btn-danger btn-sm btn-crle">SALE 20%</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <img src="images/Layer 5.png" height="173" class="img-fluid crd-sm-img" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 pt-2">
+              <p style="font-size: 8px;" class="text-warning">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                </svg><span class="text-dark">(01)</span>
+              </p>
+              <h5 style="font-size: 16px; font-weight: bold;" >Vegan Egg Replacer</h5>
+              <p class="text-danger" style="font-size: 16px; font-weight: bold;"><span style="font-size: 13px; color: #cccccc;">$200.00</span> $280.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 border p-2 mt-5 rounded-4">
+          <div class="row justify-content-center">
+            <div class="col-12 bg-light p-3 rounded-4 crd-sm">
+              <div class="row">
+                <div class="col-12 d-flex justify-content-between">
+                   <button class="btn btn-success btn-sm btn-crle">FRESH</button>
+                   <button class="btn btn-danger btn-sm btn-crle">SALE 20%</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <img src="images/Layer 6.png" height="173" class="img-fluid crd-sm-img" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 pt-2">
+              <p style="font-size: 8px;" class="text-warning">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                </svg><span class="text-dark">(01)</span>
+              </p>
+              <h5 style="font-size: 16px; font-weight: bold;" >Vegan Egg Replacer</h5>
+              <p class="text-danger" style="font-size: 16px; font-weight: bold;"><span style="font-size: 13px; color: #cccccc;">$200.00</span> $280.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 p-3 justify-content-around">
+        <div class="col-md-3 border p-2 mt-5 rounded-4">
+          <div class="row justify-content-center">
+            <div class="col-12 bg-light p-3 rounded-4 crd-sm">
+              <div class="row">
+                <div class="col-12 d-flex justify-content-between">
+                   <button class="btn btn-success btn-sm btn-crle">FRESH</button>
+                   <button class="btn btn-danger btn-sm btn-crle">SALE 20%</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <img src="images/Layer 7.png" height="173" class="img-fluid crd-sm-img" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 pt-2">
+              <p style="font-size: 8px;" class="text-warning">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                </svg><span class="text-dark">(01)</span>
+              </p>
+              <h5 style="font-size: 16px; font-weight: bold;" >Vegan Egg Replacer</h5>
+              <p class="text-danger" style="font-size: 16px; font-weight: bold;"><span style="font-size: 13px; color: #cccccc;">$200.00</span> $280.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 border p-2 mt-5 rounded-4">
+          <div class="row justify-content-center">
+            <div class="col-12 bg-light p-3 rounded-4 crd-sm">
+              <div class="row">
+                <div class="col-12 d-flex justify-content-between">
+                   <button class="btn btn-success btn-sm btn-crle">FRESH</button>
+                   <button class="btn btn-danger btn-sm btn-crle">SALE 20%</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <img src="images/Layer 8.png" height="173" class="img-fluid crd-sm-img" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 pt-2">
+              <p style="font-size: 8px;" class="text-warning">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                </svg><span class="text-dark">(01)</span>
+              </p>
+              <h5 style="font-size: 16px; font-weight: bold;" >Vegan Egg Replacer</h5>
+              <p class="text-danger" style="font-size: 16px; font-weight: bold;"><span style="font-size: 13px; color: #cccccc;">$200.00</span> $280.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 border p-2 mt-5 rounded-4">
+          <div class="row justify-content-center">
+            <div class="col-12 bg-light p-3 rounded-4 crd-sm">
+              <div class="row">
+                <div class="col-12 d-flex justify-content-between">
+                   <button class="btn btn-success btn-sm btn-crle">FRESH</button>
+                   <button class="btn btn-danger btn-sm btn-crle">SALE 20%</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <img src="images/Layer 9.png" height="173" class="img-fluid crd-sm-img" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 pt-2">
+              <p style="font-size: 8px;" class="text-warning">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                </svg><span class="text-dark">(01)</span>
+              </p>
+              <h5 style="font-size: 16px; font-weight: bold;" >Vegan Egg Replacer</h5>
+              <p class="text-danger" style="font-size: 16px; font-weight: bold;"><span style="font-size: 13px; color: #cccccc;">$200.00</span> $280.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 border p-2 mt-5 rounded-4">
+          <div class="row justify-content-center">
+            <div class="col-12 bg-light p-3 rounded-4 crd-sm">
+              <div class="row">
+                <div class="col-12 d-flex justify-content-between">
+                   <button class="btn btn-success btn-sm btn-crle">FRESH</button>
+                   <button class="btn btn-danger btn-sm btn-crle">SALE 20%</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <img src="images/Layer 3.png" height="173" class="img-fluid crd-sm-img" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 pt-2">
+              <p style="font-size: 8px;" class="text-warning">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                  <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                </svg><span class="text-dark">(01)</span>
+              </p>
+              <h5 style="font-size: 16px; font-weight: bold;" >Vegan Egg Replacer</h5>
+              <p class="text-danger" style="font-size: 16px; font-weight: bold;"><span style="font-size: 13px; color: #cccccc;">$200.00</span> $280.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 d-flex justify-content-center">
+          <button class="btn btn-success btn-crle btn-center" style="font-size: 14px;">View All <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+          </svg></button>
+        </div>
+      </div>
+     </section>
+     <!-- Natural Section -->
+      <section class="container-fluid bgImg mb-5 p-5" style="background-color: #d5eeb8;">
+        <div class="row">
+          <div class="col-12">
+            <p style="margin-bottom: 0; font-size: 12px; text-align: center; color: #00a800;">NATURAL ONLY</p>
+            <h2 style="font-size: 30px; text-align: center; font-weight: bold;">Why People Choose Organic</h2>
+          </div>
+        </div>vscode-file://vscode-app/c:/Users/arsad.a/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html
+        <div class="row">
+          <div class="col-md-5 p-5">
+            <div class="row">
+              <div class="col-12 py-4" style="padding-right: 50px;">
+                <div class="row">
+                  <div class="col-10">
+                    <h6 style="text-align: right; font-size: 12px; font-weight: bold;">100% Payment Secure</h6>
+                    <p style="text-align: right; font-size: 9px; font-weight: normal; color: #9dc29c;">Lorem ipsum dolor sit amet consectetur  adipisicin gadipising elit.</p>
+                  </div>
+                  <div class="col-2 d-flex justify-content-left">
+                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: #1e491e; padding: 0.8rem !important;  border: 2px solid #ffffff; width: 50px; height: 50px; color: #ffffff;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
+                      <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+                    </svg>
+                  </div></div>
+                </div>
+              </div>
+              </div>
+            <div class="row">
+              <div class="col-12 py-4">
+                <div class="row">
+                  <div class="col-10">
+                    <h6 style="text-align: right; font-size: 12px; font-weight: bold;">100% Payment Secure</h6>
+                    <p style="text-align: right; font-size: 9px; font-weight: normal; color: #9dc29c;">Lorem ipsum dolor sit amet consectetur  adipisicin gadipising elit.</p>
+                  </div>
+                  <div class="col-2 d-flex justify-content-left">
+                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: #1e491e; padding: 0.8rem !important; border: 2px solid #ffffff; width: 50px; height: 50px; color: #ffffff;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
+                      <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+                    </svg>
+                  </div></div>
+                </div>
+              </div>
+              </div>
+            <div class="row">
+              <div class="col-12 py-4" style="padding-right: 50px;">
+                <div class="row">
+                  <div class="col-10">
+                    <h6 style="text-align: right; font-size: 12px; font-weight: bold;">100% Payment Secure</h6>
+                    <p style="text-align: right; font-size: 9px; font-weight: normal; color: #9dc29c;">Lorem ipsum dolor sit amet consectetur  adipisicin gadipising elit.</p>
+                  </div>
+                  <div class="col-2 d-flex justify-content-left">
+                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: #1e491e; padding: 0.8rem !important;  border: 2px solid #ffffff; width: 50px; height: 50px; color: #ffffff;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
+                      <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+                    </svg>
+                  </div></div>
+                </div>
+              </div>
+            </div>
+            </div>  
+          <div class="col-md-3">
+            <img src="images/Layer 10.png" style="position: absolute; width: 360px;" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-4 p-5">
+            <div class="row">
+              <div class="col-12 py-4" style="margin-left: 50px;">
+                <div class="row">
+                  <div class="col-2 d-flex justify-content-left">
+                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: #1e491e; padding: 0.8rem !important;  border: 2px solid #ffffff; width: 50px; height: 50px; color: #ffffff;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
+                      <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+                    </svg>
+                  </div></div>
+                  <div class="col-10">
+                    <h6 style="text-align: left; font-size: 12px; font-weight: bold;">100% Payment Secure</h6>
+                    <p style="text-align: left; font-size: 9px; font-weight: normal; color: #9dc29c;">Lorem ipsum dolor sit amet consectetur  adipisicin gadipising elit.</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            <div class="row">
+              <div class="col-12 py-4">
+                <div class="row">
+                  <div class="col-2 d-flex justify-content-center">
+                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: #1e491e; padding: 0.8rem !important;  border: 2px solid #ffffff; width: 50px; height: 50px; color: #ffffff;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
+                      <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+                    </svg>
+                  </div></div>
+                  <div class="col-10">
+                    <h6 style="text-align: left; font-size: 12px; font-weight: bold;">100% Payment Secure</h6>
+                    <p style="text-align: left; font-size: 9px; font-weight: normal; color: #9dc29c;">Lorem ipsum dolor sit amet consectetur  adipisicin gadipising elit.</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            <div class="row">
+              <div class="col-12 py-4" style="margin-left: 50px;">
+                <div class="row">
+                  <div class="col-2 d-flex justify-content-center">
+                    <div class="rounded-circle d-flex justify-content-center align-items-center" style="background-color: #1e491e; padding: 0.8rem !important;  border: 2px solid #ffffff; width: 50px; height: 50px; color: #ffffff;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
+                      <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+                    </svg>
+                  </div></div>
+                  <div class="col-10">
+                    <h6 style="text-align: left; font-size: 12px; font-weight: bold;">100% Payment Secure</h6>
+                    <p style="text-align: left; font-size: 9px; font-weight: normal; color: #9dc29c;">Lorem ipsum dolor sit amet consectetur  adipisicin gadipising elit.</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!-- Fresh Vegetable -->
+      <section class="container my-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-8">
+                <h6 style="margin-bottom: 0; font-size: 12px; text-align: left; color: #00a800;">NATURAL ONLY</h6>
+                <h2 style="font-size: 25px; text-align: left; font-weight: bold;">Why People Choose Organic</h2> 
+              </div>
+              <div class="col-md-4">
+                <div class="row">
+                  <div class="col-4 d-flex flex-column align-items-center">
+                      <p class="times">11</p>
+                      <p style="font-size: 14px; color: #cccccc;">Hour</p>
+                  </div>
+                  <div class="col-4 d-flex flex-column align-items-center">
+                      <p class="times">30</p>
+                      <p style="font-size: 14px; color: #cccccc;">Min</p>
+                  </div>
+                  <div class="col-4 d-flex flex-column align-items-center">
+                      <p class="times">59</p>
+                      <p style="font-size: 14px; color: #cccccc;">Sec</p>
+                  </div>
+                </div>
+                  
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card border-0 p-3">
+                  <div class="bg-custom-lp d-flex align-items-center justify-content-center rounded-2" style="height: 130px;">
+                    <img class="card-img-top img-fluid" style="width: 90px;" src="images/mango.png" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: 15px; font-weight: bold;">Seasonal Mango</h5>
+                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$280.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 p-3">
+                  <div class="bg-custom-lp d-flex align-items-center justify-content-center rounded-2" style="height: 130px;">
+                    <img class="card-img-top img-fluid" style="width: 90px;" src="images/grapesB.png" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: 15px; font-weight: bold;">Cool Grapes</h5>
+                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$280.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 p-3">
+                  <div class="bg-custom-lp d-flex align-items-center justify-content-center rounded-2" style="height: 130px;">
+                    <img class="card-img-top img-fluid" style="width: 90px;" src="images/tomatos.png" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: 15px; font-weight: bold;">Rich Tamato</h5>
+                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$280.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card border-0 p-3">
+                  <div class="bg-custom-lp d-flex align-items-center justify-content-center rounded-2" style="height: 130px;">
+                    <img class="card-img-top img-fluid" style="width: 90px;" src="images/onion.png" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: 15px; font-weight: bold;">Fresh Onion</h5>
+                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$280.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 p-3">
+                  <div class="bg-custom-lp d-flex align-items-center justify-content-center rounded-2" style="height: 130px;">
+                    <img class="card-img-top img-fluid" style="width: 90px;" src="images/chilli.png" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: 15px; font-weight: bold;">Tikha Chilli</h5>
+                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$280.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card border-0 p-3">
+                  <div class="bg-custom-lp d-flex align-items-center justify-content-center rounded-2" style="height: 130px;">
+                    <img class="card-img-top img-fluid" style="width: 90px;" src="images/orange.png" alt="">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: 15px; font-weight: bold;">Orange</h5>
+                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$280.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6" style="background-color: #cccccc;">
+            <div class="row">
+              <div class="col-12" style="height: 100px;">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 discountA">
+                <h3 style="font-size: 20px; font-weight: bold;">Natural Fresh Fruit Juice</h3>
+                <p style="font-size: 9px; color:#577459; text-align: right;">Lorem ipsum dolor sit, amet consectetur adipisicing. <br> Lorem ipsum dolor sit amet.</p>
+                <button class="btn btn-success vAll" style="font-size: 10px; font-weight: 600; border-radius: 30px;">View All <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right-circle-fill text-light" viewBox="0 0 16 16">
+                  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                </svg></button>
+              </div>
+              <div class="col-6" style="padding: 0px;">
+                <img class="img-fluid" src="images/discountB.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer  -->
+      <footer>
+        <div class="subscribe">
+          <div class="subscribeChild">
+            <div class="newsletterSec">
+              <i class="fa-regular fa-envelope"></i>
+              <div class="newsletterText">
+                <h3>Sign Up to Newsletter</h3>
+                <p>Subscribe our newsletter for latest products and more update.</p>
+              </div>
+            </div>
+            <div class="subscribeInp">
+              <input type="email" placeholder="Your email id">
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div  class="footerBar">
+          <div class="footerChild">
+            <div class="Footerabout">
+              <a class="navbar-brand text-warning d-flex align-item-center font-weight-bold" href="#">FOOD<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+                  <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+                </svg>
+              </a>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae tempora quasi iure voluptatem laboriosam! Voluptates nesciunt quasi sint illum, odit eligendi cum consequuntur optio officia quos itaque molestias, cupiditate rem!</p>
+              <div class="footerIcons">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+          </div>
+          <div class="footerInfo">
+            <h4>Information</h4>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Delivery Information</p>
+            <p>Privacy & Policy</p>
+            <p>Terms & Conditions</p>
+          </div>
+          <div class="footerInfo">
+            <h4>My Account</h4>
+            <p>My Account</p>
+            <p>Shopping Cart</p>
+            <p>Wishlist</p>
+            <p>Order History</p>
+            <p>International Order</p>
+          </div>
+          <div class="footerContact">
+            <h4>Contact Us</h4>
+            <p>Address: <span>123, Natus Rd, NY - 48275</span></p>
+            <p>Email: <span>email123@mail.com</span></p>
+            <p>Phone: <span>+91-123456789</span></p>
+            <h6>Payment Accepted</h6>
+            <div class="footerIcons">
+              <i class="fa-brands fa-cc-visa"></i>
+              <i class="fa-brands fa-cc-stripe"></i>
+              <i class="fa-brands fa-cc-paypal"></i>
+              <i class="fa-brands fa-cc-amazon-pay"></i>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="copytight">
+            <p>Copyright &copy; 2024 Food. All right reserved. Developed By Arsad</p>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

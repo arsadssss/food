@@ -1,0 +1,366 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+.rad{
+    border-radius: 20px;
+    color: white;
+    padding-left: 20px !important;
+}
+.bigHead
+{
+    font-weight: 900;
+    font-size: 70px;
+}
+.bannerPara{
+    color: #a3a3a3;
+    font-size: 1rem;
+}
+.plybtn
+{
+    padding: 16px 20px !important;
+    box-shadow: 0px 0px 30px #e3e3e3;
+}
+.opbtnn{
+    padding-left: 0px !important;
+}
+#opbtn button{
+    font-weight: 700;
+}
+.floatimg
+{
+   position: relative;
+   margin-left: -91px;
+   margin-top: 80px;
+   z-index: 1;
+}
+#pdImg img{
+    position: relative;
+    z-index: 1;
+    width: 120px;
+    margin-top: -40px;
+}
+#arrSVG svg{
+    margin-bottom: -15px;
+    z-index: 1;
+}
+.crd{
+box-shadow: 0px 0px 30px #e3e3e3;
+}
+#pdImg .crd{
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+.mtr{
+    margin-top: 75px;
+}
+.crd1 img{
+    z-index: 1;
+    position: absolute;
+    width: 140px;
+    margin-top: -40px;
+    margin-left: -40px;
+}
+.cartPad{
+    padding: 6px 10px !important;
+}
+.ptr{
+    border-top-right-radius: 30px;
+}
+.bgImg{
+    background: url("images/surface_background1.jpg") no-repeat;
+}
+.uncle{
+    z-index: 1;
+    position: relative;
+    margin-left: 120px;
+}
+.vAll{
+    padding: 5px 15px !important;
+}
+.vAll svg{
+    margin-left: 10px;
+}
+.tomato{
+    width: 145px;
+}
+.btn-crle{
+    border-radius: 20px;
+    font-size: 8px;
+
+}
+.crd-sm{
+    width: 90%;
+    height: 240px;
+    z-index: 1;
+    margin-top: -104px;
+
+}
+.crd-sm-img{
+    z-index: 2;
+    position: relative;
+    width: 300px;
+    margin-top: 20px;
+}
+.col-md-3{
+    width: 20% !important;
+}
+.times{
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #cccccc;
+    text-align: center;
+    border-radius: 59px;
+    padding: 10px 12px;
+    margin-bottom: 0px;
+}
+.discountA{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding-right: 0;
+}
+.bg-custom-lp{
+    background-color: antiquewhite;
+}
+.card-body{
+    padding-left: 0px !important;
+}
+.card-title{
+   margin-bottom: 0px !important;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.subscribe{
+    width: 100%;
+    height: auto;
+    background: #e0bf00;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribeChild{
+    max-width: 950px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.newsletterSec{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #ffffff;
+}
+.fa-envelope{
+    font-size: 50px;
+    line-height: 100%;
+}
+.newsletterText h3{
+    font-weight: bold;
+    line-height: 100%;
+}
+.newsletterText p{
+    font-weight: normal;
+    line-height: 100%;
+    font-size: 14px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.subscribeInp{
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    padding: 7px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+.subscribeInp input{
+    border: none;
+    outline: none;
+    font-size: 12px;
+    padding: 10px ;
+    padding-left: 20px;
+    border-radius: 50px;
+    color: #111111;
+}
+.subscribeInp button{
+    background-color: #e60000;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.footerBar{
+    max-width: 950px;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+.footerChild{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-top: 1px solid #c3c3c3;
+    border-bottom: 1px solid #c3c3c3;
+}
+.Footerabout{
+    max-width: 280px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 1px solid #a3a3a3;
+}
+.footerInfo{
+    max-width: 180px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 1px solid #a3a3a3;    
+}
+.footerContact{
+    max-width: 250px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 20px;  
+}
+.Footerabout p{
+    font-size: 10px;
+    line-height: 100%;
+    margin-top: 15px;
+    color: #8b8b8b;
+}
+.footerInfo p{
+    font-size: 10px;
+    line-height: 100%;
+    color: #8b8b8b;
+    cursor: pointer;
+}
+.footerInfo h4{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 100%;
+    color: #525252;
+}
+.footerContact p{
+    font-size: 10px;
+    line-height: 100%;
+    color: #8b8b8b;
+    cursor: pointer;
+}
+.footerContact h4{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 100%;
+    color: #525252;
+}
+.footerContact h6{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 100%;
+    color: #525252;
+}
+.footerIcons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+.footerIcons i{
+    font-size: 25px;
+    color: #111111;
+    cursor: pointer;
+}
+.footerIcons i:hover{
+    color: #2600ff;
+}
+.copytight{
+    height: auto;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copytight p{
+    font-size: 10px;
+    color: #6b6b6b;
+}
+
+@media (max-width:999px){
+    .mtr1{
+        margin-top: 70px !important;
+    }
+    .mt20{
+        margin-top: 20px !important;
+    }
+    #opbtn button{
+        padding: 10px !important;
+        font-size: 11px;
+    }
+    .plybtn
+{
+    padding: 6px 10px !important;
+    box-shadow: 0px 0px 30px #ffcaca;
+}
+.opbtnn{
+    padding-left: 0px !important;
+}
+.cntrCont{
+    justify-content: center !important;
+    margin-top: 60px !important;
+}
+.mrt0{margin-top: 0 !important;}
+.bigHead{
+    font-size: 45px !important;
+}
+.crd1 img{
+    width: 120px !important;
+}
+.footerChild {
+    height: auto;
+}
+}

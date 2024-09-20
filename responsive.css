@@ -1,0 +1,33 @@
+@media only screen and (max-width: 667px){
+    .subscribeChild{
+        width: 90%;
+    }
+    .newsletterText p, h3{
+        text-align: center;
+    }
+    .subscribeInp{
+        width: 100%;
+    }
+    .footerChild{
+        justify-content: left;
+        padding: 20px 0px;
+    }
+    .footerInfo, .footerContact, .Footerabout{
+        border-right: none;
+        padding: 0px 20px;
+    }
+    .pAll0{
+        padding: 0px !important;
+    }
+    .cCenter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mtR-20{
+        margin-top: 20px !important;
+    }
+    .textHR{
+        font-size: 18px;
+    }
+}
