@@ -70,9 +70,7 @@ box-shadow: 0px 0px 30px #e3e3e3;
 .ptr{
     border-top-right-radius: 30px;
 }
-.bgImg{
-    background: url("images/surface_background1.jpg") no-repeat;
-}
+
 .uncle{
     z-index: 1;
     position: relative;
@@ -105,8 +103,8 @@ box-shadow: 0px 0px 30px #e3e3e3;
     width: 300px;
     margin-top: 20px;
 }
-.col-md-3{
-    width: 20% !important;
+.card-wdith{
+    width: 24%;
 }
 .times{
     font-size: 12px;
@@ -116,6 +114,9 @@ box-shadow: 0px 0px 30px #e3e3e3;
     border-radius: 59px;
     padding: 10px 12px;
     margin-bottom: 0px;
+}
+.naturalImg{
+    width: 360px;
 }
 .discountA{
     display: flex;

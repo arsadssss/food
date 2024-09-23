@@ -30,4 +30,15 @@
     .textHR{
         font-size: 18px;
     }
+    .card-wdith{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .naturalImg{
+        width: 100px;
+        left: 50%;
+        top: 43%;
+        transform: translateY(-30%);
+        transform: translateX(-50%);
+    }
 }
