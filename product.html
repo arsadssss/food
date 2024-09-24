@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body class="position-relative">
+     <div class="container-fluid bg-white sticky-top">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg bg-body-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand text-warning d-flex align-item-center font-weight-bold" href="index.html">FOOD<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+                  <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+                </svg></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">MENU</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">SERVICE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">SHOP</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <div class="input-group mb-3">
+                      <button class="btn bg-light" type="button" id="button-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg></button>
+                      <input type="text" class="form-control bg-light border-0 focus-ring-light" placeholder="Search" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                      <button class="btn bg-light border-left" type="button" id="button-addon1">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2h4a2 2 0 0 1-2-2V4h4.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                            </svg>
+                            <span id="cartCount" class="badge badge-warning text-danger">0</span>
+                      </button>  
+                  </div>
+                </form>
+              </div>
+            </div>
+              </nav>
+        </div>
+     </div>
+     <!-- Product Page  -->
+      <section class="productPage">
+        <div class="container">
+            <div class="row px-2">
+                <div class="col">
+                    <div class="paths">
+                        <p><a href="index.html">Home ></a></p>
+                        <p><a href="#home">Product ></a></p>
+                        <p class="productName">Product Name</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-12 bg-white">
+                    <img src="images/orange.png" class="productImg" alt="">
+                </div>
+                <div class="col-md-6 col-12 productsDetails">
+                    <h4>Brand Name : <span id="brandName">ABC</span></h4>
+                    <h4>Availablity : <span id="stock">5</span></h4>
+                    <h4 id="productName" class="productName">Product Name</h4>
+                    <div class="ratings">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <div class="productsFeatures">
+                        <ul>
+                            <li>Lavender Dhoop sticks activate your senses and relax the nerves, making you less anxious. They also hold the power to cleanse the air.</li>
+                            <li>Lavender Dhoop sticks activate your senses and relax the nerves, making you less anxious. They also hold the power to cleanse the air.</li>
+                            <li>Lavender Dhoop sticks activate your senses and relax the nerves, making you less anxious. They also hold the power to cleanse the air.</li>
+                        </ul>
+                    </div>
+                    <div class="prices">
+                        <p>$<span class="finalPrice">5.05</span>&nbsp; $<span class="offerPrice">8.08</span> | USD(incl. of all taxes)</p>
+                    </div>
+                    <div class="buyNowCTA">
+                        <div class="quantity">
+                            <button id="sub">-</button>
+                            <button id="quantity">1</button>
+                            <button id="add">+</button>
+                        </div>
+                        <button id="buyNow">Buy Now</button>
+                        <button id="addToCart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- footer  -->
+      <footer style="margin-top: 30px;">
+        <div class="subscribe">
+          <div class="subscribeChild">
+            <div class="newsletterSec">
+              <i class="fa-regular fa-envelope"></i>
+              <div class="newsletterText">
+                <h3>Sign Up to Newsletter</h3>
+                <p>Subscribe our newsletter for latest products and more update.</p>
+              </div>
+            </div>
+            <div class="subscribeInp">
+              <input type="email" placeholder="Your email id">
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div  class="footerBar">
+          <div class="footerChild">
+            <div class="Footerabout">
+              <a class="navbar-brand text-warning d-flex align-item-center font-weight-bold" href="#">FOOD<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+                  <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+                </svg>
+              </a>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae tempora quasi iure voluptatem laboriosam! Voluptates nesciunt quasi sint illum, odit eligendi cum consequuntur optio officia quos itaque molestias, cupiditate rem!</p>
+              <div class="footerIcons">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+          </div>
+          <div class="footerInfo">
+            <h4>Information</h4>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Delivery Information</p>
+            <p>Privacy & Policy</p>
+            <p>Terms & Conditions</p>
+          </div>
+          <div class="footerInfo">
+            <h4>My Account</h4>
+            <p>My Account</p>
+            <p>Shopping Cart</p>
+            <p>Wishlist</p>
+            <p>Order History</p>
+            <p>International Order</p>
+          </div>
+          <div class="footerContact">
+            <h4>Contact Us</h4>
+            <p>Address: <span>123, Natus Rd, NY - 48275</span></p>
+            <p>Email: <span>email123@mail.com</span></p>
+            <p>Phone: <span>+91-123456789</span></p>
+            <h6>Payment Accepted</h6>
+            <div class="footerIcons">
+              <i class="fa-brands fa-cc-visa"></i>
+              <i class="fa-brands fa-cc-stripe"></i>
+              <i class="fa-brands fa-cc-paypal"></i>
+              <i class="fa-brands fa-cc-amazon-pay"></i>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="copytight">
+            <p>Copyright &copy; 2024 Food. All right reserved. Developed By Arsad</p>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="scriptProduct.js"></script>
+  </body>
+</html>
