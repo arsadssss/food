@@ -2,6 +2,7 @@ var productName = document.querySelectorAll(".productName");
 var brandName = document.querySelector("#brandName");
 var productImg = document.querySelector(".productImg");
 var finalPrice = document.querySelector(".finalPrice");
+var discountPrice = document.querySelector(".discountPrice");
 
 const params = new URLSearchParams(window.location.search);
 
@@ -12,7 +13,7 @@ productName.forEach((words)=>{
 })
 finalPrice.textContent = params.get('productPrice');
 newPrice = params.get('productPrice');
-
+discountPrice.textContent = newPrice + 7;
 
 var quantity = document.querySelector("#quantity");
 var sub = document.querySelector("#sub");
@@ -41,8 +42,6 @@ add.addEventListener("click", function(){
 
     const cartCount = document.querySelector("#cartCount");
     const addToCart = document.querySelector("#addToCart");
-    
-    // let cart = 0;
     
     addToCart.addEventListener("click", function(){
         cartCount.textContent = quan;

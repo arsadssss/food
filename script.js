@@ -37,6 +37,7 @@ function cartNumber(){
 
 addtocart.addEventListener("click", function(){
     cartNumber();
+    console.log('data')
 });
 
 const orders = document.querySelectorAll(".orders");
