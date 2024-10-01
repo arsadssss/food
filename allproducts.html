@@ -38,18 +38,21 @@
                     <a href="error.html" class="nav-link">SHOP</a>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <form class="d-flex formClas" role="search">
                   <div class="input-group mb-3">
                       <button class="btn bg-light" type="button" id="button-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                         </svg></button>
                       <input type="text" class="form-control bg-light border-0 focus-ring-light" placeholder="Search" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                      <button class="btn bg-light border-left" type="button" id="button-addon1">
+                      <button class="btn bg-light border-left wishListBTN" type="button" id="button-addon1">
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
                               <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2h4a2 2 0 0 1-2-2V4h4.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
                             </svg>
                             <span id="cartCount" class="badge badge-warning text-danger">0</span>
                       </button>  
+                  </div>
+                  <div class="wishList">
+                    
                   </div>
                 </form>
               </div>
@@ -78,13 +81,13 @@
             <div class="newsletterSec">
               <i class="fa-regular fa-envelope"></i>
               <div class="newsletterText">
-                <h3>Sign Up to Newsletter</h3>
-                <p>Subscribe our newsletter for latest products and more update.</p>
+                <h3 id="signUPText">Sign Up to Newsletter</h3>
+                <p id="signUPInfo">Subscribe our newsletter for latest products and more update.</p>
               </div>
             </div>
             <div class="subscribeInp">
-              <input type="email" placeholder="Your email id">
-              <button>Subscribe</button>
+              <input type="email" id="emlINPT" placeholder="Your email id">
+              <button id="subsBTN">Subscribe</button>
             </div>
           </div>
         </div>

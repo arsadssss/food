@@ -28,6 +28,7 @@ if(hour == 0){
 
 const cartCount = document.querySelector("#cartCount");
 const addtocart = document.querySelector("#addtocart");
+const wishListBtn = document.querySelector(".wishListBTN");
 
 let cart = 0;
 function cartNumber(){
@@ -37,12 +38,36 @@ function cartNumber(){
 
 addtocart.addEventListener("click", function(){
     cartNumber();
-    console.log('data')
+    addWishlist();
 });
 
 const orders = document.querySelectorAll(".orders");
 
+const wishList = document.querySelector(".wishList");
 
+function addWishlist(){
+    const wishListItems = document.createElement("div");
+    const wishListItemsC = document.createElement("div");
+    const wishTitles = document.createElement("div");
+    const btn = document.createElement("button");
+    const img = document.createElement("img");
+    const title = document.createElement("h4");
+    const price = document.createElement("p");
+    wishListItems.classList.add("wishListItems");
+    wishListItemsC.classList.add("wishListItemsC");
+    wishTitles.classList.add("wishTitles");
+    img.style.width = "35px";
+    img.src = "images/burger.png";
+    title.textContent = "Product Titles";
+    price.innerHTML = `Price <span style="color: #05ff05;">$320</span>`
+    wishList.appendChild(wishListItems);
+    wishListItems.append(wishListItemsC, btn);
+    wishListItemsC.append(img, wishTitles);
+    wishTitles.append(title, price);
+}
+wishListBtn.addEventListener("click", function(){
+    wishList.classList.toggle("wActive");
+})
 
 orders.forEach((orders)=>{
     orders.addEventListener("click", function(event){
@@ -70,5 +95,14 @@ orders.forEach((orders)=>{
             console.log("No Item found");
         }
     });
-})
+});
 
+const subsBTN = document.querySelector("#subsBTN");
+const signUPText = document.querySelector("#signUPText");
+const signUPInfo = document.querySelector("#signUPInfo");
+
+subsBTN.addEventListener("click", function(){
+    const emlINPT = document.querySelector("#emlINPT").value;
+    signUPText.textContent = "Thank You For Subscribe";
+    signUPInfo.innerHTML = `We'll reach out to you soon <span style='color:red;'> ${emlINPT} </span>`;
+});
