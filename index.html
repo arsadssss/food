@@ -40,7 +40,7 @@
                 </ul>
                 <form class="d-flex formClas" role="search">
                   <div class="input-group mb-3">
-                      <button class="btn bg-light" type="button" id="button-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                      <button class="btn bg-light searchbtn" type="submit" id="button-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                         </svg></button>
                       <input type="text" class="form-control bg-light border-0 focus-ring-light" placeholder="Search" aria-label="Example text with button addon" aria-describedby="button-addon1">
@@ -50,6 +50,8 @@
                             </svg>
                             <span id="cartCount" class="badge badge-warning text-danger">0</span>
                       </button>  
+                  </div>
+                  <div class="searchList orders">
                   </div>
                   <div class="wishList">
                     <div class="wishListItems">
@@ -90,6 +92,7 @@
         </div>
      </div>
      <section class="container">
+      
         <div class="row mt-5 mt20">
             <div class="col-md-5">
                 <div class="row align-items-center">
@@ -361,17 +364,13 @@
        </div>
      </section>
      <section class="container my-5">
-      <div class="row justify-content-center align-items-end px-5">
-        <div class="col-md-6">
+      <div class="row justify-content-center align-items-md-end align-item-center">
+        <div class="col-6">
           <p style="margin-bottom: 0; font-size: 12px; color: #05ff05;">NATURAL ONLY</p>
           <h2 class="textHR" style="font-weight: bold; margin-bottom: 0px !important;">Offers New Products</h2>
         </div>
-        <div class="col-md-6 float-end d-flex justify-content-md-end justify-content-start mt-3 mt-md-0 flex-wrap gap-3">
-          <button class="btn btn-warning btn-sm">All Products</button>
-          <button class="btn btn-light border btn-sm">Beverage</button>
-          <button class="btn btn-light border btn-sm">Buffer</button>
-          <button class="btn btn-light border btn-sm">Dried</button>
-          <button class="btn btn-light border btn-sm">Food</button>
+        <div class="col-6 float-end d-flex justify-content-md-end justify-content-end mt-3 mt-md-0 flex-wrap gap-3">
+          <a href="allproducts.html" class="btn btn-warning btn-sm">View All Products</a>
         </div>
       </div>
       <div class="row mt-5 p-3 d-flex justify-content-between gap-1">
@@ -849,70 +848,70 @@
             </div>
             <div class="row">
               <div class="col-md-4">
-                <div class="card border-0 p-3">
+                <div class="card border-0 p-3 order-items orders">
                   <div class="bg-custom-lp d-flex align-items-center justify-content-center rounded-2" style="height: 130px;">
                     <img class="card-img-top img-fluid" style="width: 90px;" src="images/mango.png" alt="">
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title" style="font-size: 15px; font-weight: bold;">Seasonal Mango</h5>
-                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$280.00</p>
+                    <h5 class="card-title title" style="font-size: 15px; font-weight: bold;">Seasonal Mango</h5>
+                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$<span class="price">280</span></p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card border-0 p-3">
+                <div class="card border-0 p-3 order-items orders">
                   <div class="bg-custom-lp d-flex align-items-center justify-content-center rounded-2" style="height: 130px;">
                     <img class="card-img-top img-fluid" style="width: 90px;" src="images/grapesB.png" alt="">
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title" style="font-size: 15px; font-weight: bold;">Cool Grapes</h5>
-                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$280.00</p>
+                    <h5 class="card-title title" style="font-size: 15px; font-weight: bold;">Cool Grapes</h5>
+                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$<span class="price">219</span></p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card border-0 p-3">
+                <div class="card border-0 p-3 order-items orders">
                   <div class="bg-custom-lp d-flex align-items-center justify-content-center rounded-2" style="height: 130px;">
                     <img class="card-img-top img-fluid" style="width: 90px;" src="images/tomatos.png" alt="">
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title" style="font-size: 15px; font-weight: bold;">Rich Tamato</h5>
-                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$280.00</p>
+                    <h5 class="card-title title" style="font-size: 15px; font-weight: bold;">Rich Tamato</h5>
+                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$<span class="price">189</span></p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-4">
-                <div class="card border-0 p-3">
+                <div class="card border-0 p-3 order-items orders">
                   <div class="bg-custom-lp d-flex align-items-center justify-content-center rounded-2" style="height: 130px;">
                     <img class="card-img-top img-fluid" style="width: 90px;" src="images/onion.png" alt="">
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title" style="font-size: 15px; font-weight: bold;">Fresh Onion</h5>
-                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$280.00</p>
+                    <h5 class="card-title title" style="font-size: 15px; font-weight: bold;">Fresh Onion</h5>
+                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$<span class="price">258</span></p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card border-0 p-3">
+                <div class="card border-0 p-3 order-items orders">
                   <div class="bg-custom-lp d-flex align-items-center justify-content-center rounded-2" style="height: 130px;">
                     <img class="card-img-top img-fluid" style="width: 90px;" src="images/chilli.png" alt="">
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title" style="font-size: 15px; font-weight: bold;">Tikha Chilli</h5>
-                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$280.00</p>
+                    <h5 class="card-title title" style="font-size: 15px; font-weight: bold;">Tikha Chilli</h5>
+                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$<span class="price">280.00</span></p>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card border-0 p-3">
+                <div class="card border-0 p-3 order-items orders">
                   <div class="bg-custom-lp d-flex align-items-center justify-content-center rounded-2" style="height: 130px;">
                     <img class="card-img-top img-fluid" style="width: 90px;" src="images/orange.png" alt="">
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title" style="font-size: 15px; font-weight: bold;">Orange</h5>
-                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$280.00</p>
+                    <h5 class="card-title title" style="font-size: 15px; font-weight: bold;">Orange</h5>
+                    <p class="card-text text-danger" style="font-size: 10px; font-weight: bold;">$<span class="price">177</span></p>
                   </div>
                 </div>
               </div>

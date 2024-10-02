@@ -158,3 +158,58 @@ subsBTN.addEventListener("click", function(){
     signUPText.textContent = "Thank You For Subscribe";
     signUPInfo.innerHTML = `We'll reach out to you soon <span style='color:red;'> ${emlINPT} </span>`;
 });
+
+const searchListItems = document.querySelector(".searchList");
+
+function addsearchlist(imgSRC, pTitle, pPrice){
+    const wishListItems = document.createElement("div");
+    const wishListItemsC = document.createElement("div");
+    const wishTitles = document.createElement("div");
+    const btn = document.createElement("button");
+    const img = document.createElement("img");
+    const title = document.createElement("h4");
+    const price = document.createElement("p");
+    wishListItems.classList.add("wishListItems", "order-items");
+    wishListItemsC.classList.add("wishListItemsC");
+    wishTitles.classList.add("wishTitles");
+    title.classList.add("title");
+    img.style.width = "35px";
+    img.src = imgSRC;
+    title.textContent = pTitle;
+    price.innerHTML = `Price $<span style="color: #05ff05;" class="price">${pPrice}</span>`;
+    searchListItems.appendChild(wishListItems);
+    wishListItems.append(wishListItemsC, btn);
+    wishListItemsC.append(img, wishTitles);
+    wishTitles.append(title, price);
+}
+
+const searchbtn = document.querySelector(".searchbtn");
+const searchList = document.querySelector(".searchList");
+const formControl = document.querySelector(".form-control");
+
+searchbtn.addEventListener("click", function(event){
+    event.preventDefault();
+    var inputVal1 = formControl.value;
+    var inputVal = inputVal1.toLowerCase();
+        for(let i = 0; i < 10; i++){
+            let randomImg = Math.floor(Math.random()*10);
+            let randomPrice = Math.floor(Math.random()*50) + 10;
+            fetch(`https://foodish-api.com/images/${inputVal}/${inputVal}${randomImg}.jpg`)
+            .then(response => {
+                if (response.ok) {
+                addsearchlist(response.url, inputVal1, randomPrice);
+                } else {
+                console.log('failed');
+                }
+                }).catch(error => console.log('Error:', error));
+                }
+    if(formControl.value !== ""){
+        searchList.style.display = "block";
+    }
+    formControl.value = "";
+});
+formControl.addEventListener("input", function(){
+    if(formControl.value == ""){
+        searchList.style.display = "none";
+    }
+});

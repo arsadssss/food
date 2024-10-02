@@ -444,7 +444,7 @@ text-align: left;
     box-sizing: border-box;
     color: #2600ff;
 }
-#addtocart{
+#addToCart{
     outline: none;
     background-color: transparent;
     cursor: pointer;
@@ -590,7 +590,7 @@ text-align: left;
     width: 100%;
     height: auto;
 }
-.wishList{
+.wishList, .searchList{
     position: absolute;
     top: 38px;
     right: 0;
@@ -602,7 +602,7 @@ text-align: left;
     background-color: white;
     box-shadow: 0px 0px 20px #c3c3c3;
     display: none;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 .wActive{
     display: block;
