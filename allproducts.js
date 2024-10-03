@@ -160,6 +160,16 @@ subsBTN.addEventListener("click", function(){
 });
 
 const searchListItems = document.querySelector(".searchList");
+function closeDiv(){
+    const closeDiv = document.createElement("p");
+    closeDiv.classList.add("close");
+    closeDiv.textContent = "Close X";
+    searchListItems.appendChild(closeDiv);
+    closeDiv.addEventListener('click', function(){
+        searchListItems.innerHTML = "";
+        searchListItems.style.display = "none";
+    });
+}
 
 function addsearchlist(imgSRC, pTitle, pPrice){
     const wishListItems = document.createElement("div");
@@ -181,6 +191,7 @@ function addsearchlist(imgSRC, pTitle, pPrice){
     wishListItems.append(wishListItemsC, btn);
     wishListItemsC.append(img, wishTitles);
     wishTitles.append(title, price);
+    
 }
 
 const searchbtn = document.querySelector(".searchbtn");
@@ -189,6 +200,7 @@ const formControl = document.querySelector(".form-control");
 
 searchbtn.addEventListener("click", function(event){
     event.preventDefault();
+    closeDiv();
     var inputVal1 = formControl.value;
     var inputVal = inputVal1.toLowerCase();
         for(let i = 0; i < 10; i++){

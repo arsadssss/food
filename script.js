@@ -59,6 +59,7 @@ const formControl = document.querySelector(".form-control");
 
 searchbtn.addEventListener("click", function(event){
     event.preventDefault();
+    closeDiv();
     var inputVal1 = formControl.value;
     var inputVal = inputVal1.toLowerCase();
         for(let i = 0; i < 10; i++){
@@ -177,6 +178,17 @@ orders.forEach((orders)=>{
         }
     });
 });
+
+function closeDiv(){
+    const closeDiv = document.createElement("p");
+    closeDiv.classList.add("close");
+    closeDiv.textContent = "Close X";
+    searchListItems.appendChild(closeDiv);
+    closeDiv.addEventListener('click', function(){
+        searchListItems.innerHTML = "";
+        searchListItems.style.display = "none";
+    });
+};
 
 const subsBTN = document.querySelector("#subsBTN");
 const signUPText = document.querySelector("#signUPText");

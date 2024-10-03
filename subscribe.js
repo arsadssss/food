@@ -35,6 +35,17 @@ const searchbtn = document.querySelector(".searchbtn");
 const searchList = document.querySelector(".searchList");
 const formControl = document.querySelector(".form-control");
 
+function closeDiv(){
+    const closeDiv = document.createElement("p");
+    closeDiv.classList.add("close");
+    closeDiv.textContent = "Close X";
+    searchListItems.appendChild(closeDiv);
+    closeDiv.addEventListener('click', function(){
+        searchListItems.innerHTML = "";
+        searchListItems.style.display = "none";
+    });
+};
+
 searchbtn.addEventListener("click", function(event){
     event.preventDefault();
     var inputVal1 = formControl.value;

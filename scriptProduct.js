@@ -23,6 +23,9 @@ let quan = 1;
 
 var fPrice;
 
+
+
+
 add.addEventListener("click", function(){
     quan++;
     quantity.textContent = quan;
