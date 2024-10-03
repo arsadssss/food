@@ -48,6 +48,7 @@ function closeDiv(){
 
 searchbtn.addEventListener("click", function(event){
     event.preventDefault();
+    closeDiv();
     var inputVal1 = formControl.value;
     var inputVal = inputVal1.toLowerCase();
         for(let i = 0; i < 10; i++){
