@@ -59,6 +59,17 @@ box-shadow: 0px 0px 30px #e3e3e3;
 .mtr{
     margin-top: 75px;
 }
+.crd1{
+    position: relative;
+}
+.addBTN{
+    position: absolute;
+    right: 15px;
+    bottom: 25px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
 .crd1 img{
     z-index: 1;
     position: absolute;
@@ -701,4 +712,11 @@ text-align: left;
 .productsDetails{
     margin-top: 30px;
 }
+}
+
+.quantity{
+    font-size: 18px;
+    color: #2600ff;
+    line-height: 20px;
+    margin-left: 30px;
 }

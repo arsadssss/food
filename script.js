@@ -8,7 +8,6 @@ let hour = 11;
 
 let timer = setInterval(function(){
     second--;
-    // console.log("Hello")
     if(second <= 0){
         minute--;
         second = 59;
@@ -25,8 +24,6 @@ let timer = setInterval(function(){
 if(hour == 0){
         clearInterval(timer);
 }
-
-
 
 const cartCount = document.querySelector("#cartCount");
 const addtocart = document.querySelector("#addtocart");
@@ -88,21 +85,32 @@ formControl.addEventListener("input", function(){
 });
 
 let cart = 0;
+
 function cartNumber(){
-    cart++;
+    cart = cart+1;
     cartCount.textContent = cart;
 }
 
-addtocart.addEventListener("click", function(){
-    cartNumber();
-    addWishlist();
-});
+const addBTN =  document.querySelectorAll(".addBTN");
+
+addBTN.forEach(function(BTN){
+    BTN.addEventListener("click", function(event){
+        cartNumber();
+        const newConst = event.target.closest(".orders");
+        if(newConst){
+            var productImg = newConst.querySelector('img').src;
+            var productTitle = newConst.querySelector('.title').textContent;
+            var productPrice = newConst.querySelector('.price').textContent;
+            addWishlist(productImg, productTitle, productPrice);
+        }
+    });
+})
 
 const orders = document.querySelectorAll(".orders");
 
 const wishList = document.querySelector(".wishList");
 
-function addWishlist(){
+function addWishlist(imgSrc, productitle, Pprice){
     const wishListItems = document.createElement("div");
     const wishListItemsC = document.createElement("div");
     const wishTitles = document.createElement("div");
@@ -114,17 +122,34 @@ function addWishlist(){
     wishListItemsC.classList.add("wishListItemsC");
     wishTitles.classList.add("wishTitles");
     img.style.width = "35px";
-    img.src = "images/burger.png";
-    title.textContent = "Product Titles";
-    price.innerHTML = `Price <span style="color: #05ff05;">$320</span>`
+    img.src = imgSrc;
+    btn.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
+    btn.setAttribute("class", "delbtn")
+    title.textContent = productitle;
+    price.innerHTML = `Price <span style="color: #05ff05;">$${Pprice}</span>`
     wishList.appendChild(wishListItems);
     wishListItems.append(wishListItemsC, btn);
     wishListItemsC.append(img, wishTitles);
     wishTitles.append(title, price);
+    cartCount.textContent = cart;
+        btn.addEventListener('click', function(event){
+            const wishItems = event.target.closest(".wishListItems");
+            
+            if(wishItems){
+                wishItems.remove();
+                cart--;
+                cartCount.textContent = cart;
+            }
+            if(cart === 0){
+                wishList.classList.remove("wActive");
+            }
+    })
 }
+
+
 wishListBtn.addEventListener("click", function(){
-    wishList.classList.toggle("wActive");
-})
+wishList.classList.toggle("wActive");
+});
 
 orders.forEach((orders)=>{
     orders.addEventListener("click", function(event){
@@ -150,7 +175,6 @@ orders.forEach((orders)=>{
         }else{
             console.log("No Item found");
         }
-        console.log('clicked');
     });
 });
 

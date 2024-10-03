@@ -65,28 +65,6 @@ formControl.addEventListener("input", function(){
 
 const orders = document.querySelectorAll(".orders");
 
-const wishList = document.querySelector(".wishList");
-
-function addWishlist(){
-    const wishListItems = document.createElement("div");
-    const wishListItemsC = document.createElement("div");
-    const wishTitles = document.createElement("div");
-    const btn = document.createElement("button");
-    const img = document.createElement("img");
-    const title = document.createElement("h4");
-    const price = document.createElement("p");
-    wishListItems.classList.add("wishListItems");
-    wishListItemsC.classList.add("wishListItemsC");
-    wishTitles.classList.add("wishTitles");
-    img.style.width = "35px";
-    img.src = "images/burger.png";
-    title.textContent = "Product Titles";
-    price.innerHTML = `Price <span style="color: #05ff05;">$320</span>`
-    wishList.appendChild(wishListItems);
-    wishListItems.append(wishListItemsC, btn);
-    wishListItemsC.append(img, wishTitles);
-    wishTitles.append(title, price);
-}
 
 orders.forEach((orders)=>{
     orders.addEventListener("click", function(event){
